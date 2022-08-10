@@ -1,33 +1,146 @@
-/* eslint-disable react/no-unescaped-entities */
-import Image from "next/image"
+import React from 'react';
 
 export default function Stacks() {
-    return (
-        <section className="pt-5" data-aos="fade-up">
-            <h3 className="text-center">Stacks</h3>
-            <p className="text-center mt-0 m-5 mb-2">My stacks and technologies that I'm currently studying</p>
-            <div className="container text-center d-flex justify-content-center mt-5 flex-wrap col-sm-4 col-md-8 col-lg-6">
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html5"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap"></Image>
-                <Image className="img-fluid px-2" width="85" height="85" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="tailwindcss"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="java"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="react"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" alt="nextjs"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="express"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm"></Image>
-                <Image className="img-fluid px-2" width="75" height="75" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="git"></Image>
-
-
-
-
-
-                </div>
-                
-        </section>
-    )
+  return (
+    <section className="mt-5" data-aos="fade-up" id="techs">
+      <h3 className="text-center text-success">{'<technologies />'}</h3>
+      <p className="text-center mt-0 m-5 mb-2">
+        My stacks and technologies that I am currently using and learning
+      </p>
+      <div className="container text-center d-flex justify-content-center mt-5 flex-wrap w-100 gap-5 col-12">
+        <div
+          className="card rounded-3 border-secondary mb-3 col-lg-4 col-md-6 col-sm-12"
+          data-aos="zoom-in"
+        >
+          <div className="card-header">FRONTEND</div>
+          <div className="card-body">
+            <ul className="list-group">
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                HTML5
+                <span className="badge bg-warning rounded-2">2 years</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                CSS
+                <span className="badge bg-info rounded-2">2 years</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                React.JS/Next.JS
+                <span className="badge bg-info rounded-2">1 year</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Bootstrap
+                <span className="badge bg-success rounded-2">1,5 years</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                TailwindCSS
+                <span className="badge bg-dark rounded-2">6 months</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                SASS
+                <span className="badge bg-danger rounded-2">2 months</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className="card rounded-3 border-secondary mb-3 col-lg-4 col-md-6 col-sm-12"
+          data-aos="zoom-out"
+        >
+          <div className="card-header">BACKEND</div>
+          <div className="card-body">
+            <ul className="list-group">
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Node.JS
+                <span className="badge bg-success rounded-2">1 year</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Express.JS
+                <span className="badge bg-dark rounded-2">6 months</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Nest.JS
+                <span className="badge bg-danger rounded-2">4 months</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                PHP
+                <span className="badge bg-info rounded-2">1 month</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Strapi
+                <span className="badge bg-dark rounded-2">1 month</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className="card rounded-3 border-secondary mb-3 col-lg-4 col-md-6 col-sm-12"
+          data-aos="zoom-out"
+        >
+          <div className="card-header">LANGUAGES</div>
+          <div className="card-body">
+            <ul className="list-group">
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                JavaScript
+                <span className="badge bg-warning rounded-2">2 years</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                TypeScript
+                <span className="badge bg-info rounded-2">4 months</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Java
+                <span className="badge bg-danger rounded-2">1 year</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Python
+                <span className="badge bg-info rounded-2">2 years</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                C#
+                <span className="badge bg-dark rounded-2">7 months</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className="card rounded-3 border-secondary mb-3 col-lg-4 col-md-6 col-sm-12"
+          data-aos="zoom-in"
+        >
+          <div className="card-header">DATABASES & DEVOPS</div>
+          <div className="card-body">
+            <ul className="list-group">
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                MongoDB
+                <span className="badge bg-success rounded-2">6 months</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                MySQL
+                <span className="badge bg-dark rounded-2">2 months</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                PostgreSQL
+                <span className="badge bg-info rounded-2">2 months</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Git
+                <span className="badge bg-warning rounded-2">2 years</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Heroku
+                <span className="badge bg-primary rounded-2">6 months</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Vercel
+                <span className="badge bg-dark rounded-2">4 months</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between align-items-center">
+                Docker
+                <span className="badge bg-info rounded-2">1 month</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
